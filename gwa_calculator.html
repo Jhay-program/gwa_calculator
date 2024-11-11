@@ -7,6 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Gwen" />
     <link rel="manifest" href="/site.webmanifest" />
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gwentysana AI - GWA Calculator</title>
@@ -75,11 +76,13 @@
                 const gwa = totalGradePoints / confirmUnits;
                 let message;
 
-                if (gwa <= 1.5) {
+                if (gwa <= 0.99) { 
+                    message ("There's something wrong with your grades")
+                }else if (gwa <= 1.20) {
                     message = "Yesssss sir, suma kabilang buhay!";
-                } else if (gwa <= 2.0) {
+                } else if (gwa <= 1.45) {
                     message = "Yesssss sir, magna-nine years sa kahirapan!";
-                } else if (gwa <= 2.5) {
+                } else if (gwa <= 1.75) {
                     message = "Yesssss sir, cumlaudi ang galing naman!";
                 } else if (gwa <= 3.0) {
                     message = "Yesssss sir, nakapasa din!";
