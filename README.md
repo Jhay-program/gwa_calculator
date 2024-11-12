@@ -1,1 +1,1 @@
-# gwa-calculator
+# gwa_calculator
